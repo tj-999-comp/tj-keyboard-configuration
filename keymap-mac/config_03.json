@@ -1,0 +1,13 @@
+{
+    "description": "tilde when push home key",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "home",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "grave_accent_and_tilde" }],
+            "type": "basic"
+        }
+    ]
+}
