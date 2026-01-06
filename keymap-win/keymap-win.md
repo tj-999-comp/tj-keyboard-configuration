@@ -40,46 +40,41 @@ PowerToysでは実現できない
 
 ## キーの変更項目（①〜⑥）
 
-```
 
-① Esc
-→ `（バッククォート）
 
-② Home（通常のHomeキー）
-→ `（バッククォート）
+① 
+`Esc`を `` ` `` （バッククォート）に
 
-③ End
-→ Esc（本来のEsc、連鎖なし）
+![キー変換①](images/keymap-win_01.png)
 
-④ `（物理キー）
-→ IME ON / OFF 切り替え
+② `Home`（通常のHomeキー）を `` ` ``（バッククォート）に
+
+![キー変換①](images/keymap-win_02.png)
+
+③ `End`を`Esc`（本来のEsc、連鎖なし）
+に
+![キー変換①](images/keymap-win_03.png)
+
+④ `` ` ``（物理キー）を `IME ON / OFF` 切り替えに
+![キー変換①](images/keymap-win_04.png)
+
+①～④はトグル（`Ctrl` + `Alt` + `o`）でON / OFF 切り替えが可能
 
 ⑤ Chrome タブ移動（常時有効）
-Alt + Win + Right → 次のタブ（Ctrl + Tab）
-Alt + Win + Left  → 前のタブ（Ctrl + Shift + Tab）
+
+![キー変換①](images/keymap-win_05.png)
 
 ⑥ Chrome ページ移動（常時有効・右Ctrl限定）
-右Ctrl + Left  → 戻る（Alt + Left）
-右Ctrl + Right → 進む（Alt + Right）
 
-```
+![キー変換①](images/keymap-win_06.png)
+
 
 ---
 
 ## トグルによるキーマップのON / OFFについて
 
-```- [AutoHotkey（keymap）設定ドキュメント](#autohotkeykeymap設定ドキュメント)
-  - [keymapを用いていること](#keymapを用いていること)
-  - [keymapのインストール方法と編集方法](#keymapのインストール方法と編集方法)
-    - [インストール](#インストール)
-    - [keymapファイルの作成・編集](#keymapファイルの作成編集)
-  - [キーの変更項目（①〜⑥）](#キーの変更項目)
-  - [トグルによるキーマップのON / OFFについて](#トグルによるキーマップのon--offについて)
+①〜③ のキーマップを`Ctrl` + `Alt` + `o`で ON / OFF 切り替えが可能
 
-Ctrl + Alt + O
-→ ①〜③ のキーマップを ON / OFF 切り替え
-```
-
-- トグル対象：① Esc、② Home、③ End
-- トグル非対象：④、⑤、⑥（常時有効）
+- トグル対象：① Esc、② Home、③ End、④ `
+- トグル非対象：⑤、⑥（常時有効）
 - トグル操作時は、現在の状態（ON / OFF）が通知表示される
