@@ -107,3 +107,15 @@ $SC029::Send {vkF3}
 >^Left::Send !{Left}
 >^Right::Send !{Right}
 #IfWinActive
+
+; =========================================================
+; ⑦ Ctrl + Esc → `（バッククォート）
+; （①〜③トグルがOFFのときだけ有効）
+; =========================================================
+^Esc::
+    if (!g123Enabled) {
+        SendInput {Text}``
+    } else {
+        Send ^{Esc}
+    }
+return
