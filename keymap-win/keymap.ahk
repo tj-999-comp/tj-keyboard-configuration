@@ -1,34 +1,32 @@
 #SingleInstance Force
-
-#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-; #Warn  ; Enable warnings to assist with detecting common errors.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-
+#NoEnv
+SendMode Input
+SetWorkingDir %A_ScriptDir%
 
 #SingleInstance Force
 SendMode Input
 
 ; =========================================================
-; Toggle: ①〜③ を ON/OFF
+; Mode Toggle: ①〜③ を モードA / モードB 切替
 ; 操作: Ctrl + Alt + O
+; 旧: ON  -> モードA
+; 旧: OFF -> モードB
 ; =========================================================
-global g123Enabled := true
+global g123ModeA := true
 
 ^!o::
-    g123Enabled := !g123Enabled
-    state := g123Enabled ? "ON" : "OFF"
-    TrayTip, AHK Keymap, ①〜③: %state%, 1
+    g123ModeA := !g123ModeA
+    mode := g123ModeA ? "モードA" : "モードB"
+    TrayTip, AHK Keymap, %mode%, 1
 return
 
 
-
 ; =========================================================
-; ① Esc → `（ただし①〜③トグル対象）
+; ① Esc → `（トグル対象）
 ; =========================================================
 #InputLevel 1
 $Esc::
-    if (g123Enabled) {
+    if (g123ModeA) {
         SendInput {Text}``
     } else {
         Send {Esc}
@@ -37,11 +35,10 @@ return
 
 
 ; =========================================================
-; ② Home（通常） → `（ただし①〜③トグル対象）
-; ＋（参考）テンキーHome（NumpadHome / Numpad7）も現状通り ` に
+; ② Home / NumpadHome / Numpad7 → `（トグル対象）
 ; =========================================================
 $Home::
-    if (g123Enabled) {
+    if (g123ModeA) {
         SendInput {Text}``
     } else {
         Send {Home}
@@ -49,7 +46,7 @@ $Home::
 return
 
 $NumpadHome::
-    if (g123Enabled) {
+    if (g123ModeA) {
         SendInput {Text}``
     } else {
         Send {NumpadHome}
@@ -57,7 +54,7 @@ $NumpadHome::
 return
 
 $Numpad7::
-    if (g123Enabled) {
+    if (g123ModeA) {
         SendInput {Text}``
     } else {
         Send {Numpad7}
@@ -67,11 +64,10 @@ return
 
 
 ; =========================================================
-; ③ End → 本物の Esc（連鎖なし）（ただし①〜③トグル対象）
+; ③ End → Esc（トグル対象）
 ; =========================================================
 End::
-    if (g123Enabled) {
-        ; Esc→` の影響を受けないよう SendLevel を上げて送る
+    if (g123ModeA) {
         SendLevel 2
         Send {Esc}
         SendLevel 0
@@ -82,38 +78,32 @@ return
 
 
 ; =========================================================
-; ④ `（物理キー） → IME ON/OFF（vkF3）（常時有効）
-;  ` キーは環境差が出やすいのでスキャンコードで指定（多くの配列で SC029）
+; ④ `（物理キー） → IME ON/OFF（常時有効）
 ; =========================================================
 $SC029::Send {vkF3}
 
 
 ; =========================================================
 ; ⑤ Mac風タブ移動（常時有効）
-; Alt + Win + Right  → Ctrl + Tab
-; Alt + Win + Left   → Ctrl + Shift + Tab
 ; =========================================================
 !#Right::Send ^{Tab}
 !#Left::Send ^+{Tab}
 
 
 ; =========================================================
-; ⑥ Chrome限定（右Ctrlのみ）
-; 右Ctrl + Left  → 戻る（Alt + Left）
-; 右Ctrl + Right → 進む（Alt + Right）
-; （トグル対象外）
+; ⑥ Chrome限定（右Ctrlのみ・常時有効）
 ; =========================================================
 #IfWinActive ahk_exe chrome.exe
 >^Left::Send !{Left}
 >^Right::Send !{Right}
 #IfWinActive
 
+
 ; =========================================================
-; ⑦ Ctrl + Esc → `（バッククォート）
-; （①〜③トグルがOFFのときだけ有効）
+; ⑦ Ctrl + Esc → `（モードBのみ有効）
 ; =========================================================
 ^Esc::
-    if (!g123Enabled) {
+    if (!g123ModeA) {
         SendInput {Text}``
     } else {
         Send ^{Esc}
