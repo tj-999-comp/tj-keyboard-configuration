@@ -14,20 +14,20 @@
 ### 元のキーキャップの並び
 75％キーボードで、最初は下記のようなレイアウトのキーボードである。
 <div align="center">
-    <img src="./images/kca1h_originKeyCaps_20260102.jpg" alt="元のキーキャップの並び" height="350">
+    <img src="./images/kck2_originKeyCaps_20260102.jpg" alt="元のキーキャップの並び" height="350">
 </div>
 
 ### キースイッチの並び
 元のキースイッチから、下記該当箇所は各種キースイッチに入れ替えた。
 なお、番号は[使用したキースイッチ一覧](#3-使用したキースイッチ一覧)に対応している。
 <div align="center">
-    <img src="./images/kca1h_switches_arrange.png" alt="キースイッチ設定" height="350">
+    <img src="./images/kck2_switches_arrange.png" alt="キースイッチ設定" height="350">
 </div>
 
 
 ### キーキャップの並び替え
 <div align="center">
-    <img src="./images/kca1h_keycaps_arrange.png" alt="キーキャップ並べ替え" height="350">
+    <img src="./images/kck2_keycaps_arrange.png" alt="キーキャップ並べ替え" height="350">
 </div>
 
 ---
