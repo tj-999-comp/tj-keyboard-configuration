@@ -1,0 +1,31 @@
+{
+    "description": "Copy and Paste When push pgup key and pgdn key",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "page_up",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "c",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "page_down",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "v",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
