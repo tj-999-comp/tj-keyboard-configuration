@@ -14,7 +14,7 @@
 ### 元のキーキャップの並び
 75％キーボードで、最初は下記のようなレイアウトのキーボードである。
 <div align="center">
-    <img src="./images/kck2_originKeyCaps_20260102.jpg" alt="元のキーキャップの並び" height="350">
+    <img src="./images/kck2_originKeyCaps_20260330.jpg" alt="元のキーキャップの並び" height="350">
 </div>
 
 ### キースイッチの並び
