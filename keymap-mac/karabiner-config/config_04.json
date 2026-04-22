@@ -1,33 +1,17 @@
 {
-    "description": "lang_changes",
-    "manipulators": [
+  "description": "Change grave_accent_and_tilde to fn (Globe key)",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "grave_accent_and_tilde",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [
         {
-            "conditions": [
-                {
-                    "input_sources": [{ "language": "^ja$" }],
-                    "type": "input_source_if"
-                }
-            ],
-            "from": {
-                "key_code": "grave_accent_and_tilde",
-                "modifiers": { "optional": ["any"] }
-            },
-            "to": [{ "select_input_source": { "language": "^en$" } }],
-            "type": "basic"
-        },
-        {
-            "conditions": [
-                {
-                    "input_sources": [{ "language": "^en$" }],
-                    "type": "input_source_if"
-                }
-            ],
-            "from": {
-                "key_code": "grave_accent_and_tilde",
-                "modifiers": { "optional": ["any"] }
-            },
-            "to": [{ "select_input_source": { "language": "^ja$" } }],
-            "type": "basic"
+          "key_code": "fn"
         }
-    ]
+      ],
+      "type": "basic"
+    }
+  ]
 }
