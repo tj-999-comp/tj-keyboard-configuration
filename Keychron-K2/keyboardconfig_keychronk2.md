@@ -21,13 +21,13 @@
 元のキースイッチから、下記該当箇所は各種キースイッチに入れ替えた。
 なお、番号は[使用したキースイッチ一覧](#3-使用したキースイッチ一覧)に対応している。
 <div align="center">
-    <img src="./images/kck2_switches_arrange.png" alt="キースイッチ設定" height="350">
+    <img src="./images/kck2_switches_arrange_20261113.png" alt="キースイッチ設定" height="350">
 </div>
 
 
 ### キーキャップの並び替え
 <div align="center">
-    <img src="./images/kck2_keycaps_arrange_20260330.png" alt="キーキャップ並べ替え" height="350">
+    <img src="./images/kck2_keycaps_arrange_20261113.png" alt="キーキャップ並べ替え" height="350">
 </div>
 
 ---
