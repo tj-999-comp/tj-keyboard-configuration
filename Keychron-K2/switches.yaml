@@ -1,0 +1,304 @@
+# Keychron K2 キースイッチ構成
+#
+# キースイッチの詳細は keyboardconfig_keychronk2.md の
+# 「3. 使用したキースイッチ一覧」を参照する。
+# switch_id は Markdown の No. と対応させる。
+
+schema_version: 1
+keyboard:
+  id: keychron-k2
+  name: Keychron K2
+  layout: ansi-75
+
+# キースイッチ一覧。
+# 詳細情報は Markdown に集約し、ここでは識別子だけを管理する。
+switches:
+  - switch_id: "001"
+    name: gateron-smoothie
+    source_no: 1
+  - switch_id: "002"
+    name: durock-mocha-silk-linear
+    source_no: 2
+  - switch_id: "003"
+    name: gateron-oil-king-v2
+    source_no: 3
+  - switch_id: "004"
+    name: ws-pearl
+    source_no: 4
+  - switch_id: "005"
+    name: hmx-joker
+    source_no: 5
+  - switch_id: "006"
+    name: gateron-mini-i
+    source_no: 6
+  - switch_id: "007"
+    name: ttc-frozen-silent-v2
+    source_no: 7
+  - switch_id: "008"
+    name: kailh-midnight-silent-v2-linear
+    source_no: 8
+  - switch_id: "009"
+    name: kailh-fairy-silent-linear
+    source_no: 9
+  - switch_id: "010"
+    name: durock-silent-dolphin
+    source_no: 10
+  - switch_id: "011"
+    name: kailh-deep-sea-silent-pro-box
+    source_no: 11
+  - switch_id: "012"
+    name: outemu-lemon-v3-silent-tactile
+    source_no: 12
+  - switch_id: "013"
+    name: ttc-bluish-white-silent
+    source_no: 13
+  - switch_id: "014"
+    name: durock-t1-shrimp
+    source_no: 14
+  - switch_id: "015"
+    name: outemu-creamy-yellow
+    source_no: 15
+  - switch_id: "016"
+    name: kailh-midnight-silent-v2-tactile
+    source_no: 16
+  - switch_id: "017"
+    name: gateron-g-pro-3-red
+    source_no: 17
+
+# キーごとの割り当て。
+# position_id は物理位置の安定した識別子、key_name はキー名。
+# switch_id に "001"〜"017" を設定する。未確認のキーは null のままにする。
+keys:
+  - position_id: r0c0
+    key_name: esc
+    switch_id: null
+  - position_id: r0c1
+    key_name: f1
+    switch_id: null
+  - position_id: r0c2
+    key_name: f2
+    switch_id: null
+  - position_id: r0c3
+    key_name: f3
+    switch_id: null
+  - position_id: r0c4
+    key_name: f4
+    switch_id: null
+  - position_id: r0c5
+    key_name: f5
+    switch_id: null
+  - position_id: r0c6
+    key_name: f6
+    switch_id: null
+  - position_id: r0c7
+    key_name: f7
+    switch_id: null
+  - position_id: r0c8
+    key_name: f8
+    switch_id: null
+  - position_id: r0c9
+    key_name: f9
+    switch_id: null
+  - position_id: r0c10
+    key_name: f10
+    switch_id: null
+  - position_id: r0c11
+    key_name: f11
+    switch_id: null
+  - position_id: r0c12
+    key_name: f12
+    switch_id: null
+
+  - position_id: r1c0
+    key_name: grave
+    switch_id: null
+  - position_id: r1c1
+    key_name: "1"
+    switch_id: null
+  - position_id: r1c2
+    key_name: "2"
+    switch_id: null
+  - position_id: r1c3
+    key_name: "3"
+    switch_id: null
+  - position_id: r1c4
+    key_name: "4"
+    switch_id: null
+  - position_id: r1c5
+    key_name: "5"
+    switch_id: null
+  - position_id: r1c6
+    key_name: "6"
+    switch_id: null
+  - position_id: r1c7
+    key_name: "7"
+    switch_id: null
+  - position_id: r1c8
+    key_name: "8"
+    switch_id: null
+  - position_id: r1c9
+    key_name: "9"
+    switch_id: null
+  - position_id: r1c10
+    key_name: "0"
+    switch_id: null
+  - position_id: r1c11
+    key_name: minus
+    switch_id: null
+  - position_id: r1c12
+    key_name: equal
+    switch_id: null
+  - position_id: r1c13
+    key_name: backspace
+    switch_id: null
+
+  - position_id: r2c0
+    key_name: tab
+    switch_id: null
+  - position_id: r2c1
+    key_name: q
+    switch_id: null
+  - position_id: r2c2
+    key_name: w
+    switch_id: null
+  - position_id: r2c3
+    key_name: e
+    switch_id: null
+  - position_id: r2c4
+    key_name: r
+    switch_id: null
+  - position_id: r2c5
+    key_name: t
+    switch_id: null
+  - position_id: r2c6
+    key_name: y
+    switch_id: null
+  - position_id: r2c7
+    key_name: u
+    switch_id: null
+  - position_id: r2c8
+    key_name: i
+    switch_id: null
+  - position_id: r2c9
+    key_name: o
+    switch_id: null
+  - position_id: r2c10
+    key_name: p
+    switch_id: null
+  - position_id: r2c11
+    key_name: left_bracket
+    switch_id: null
+  - position_id: r2c12
+    key_name: right_bracket
+    switch_id: null
+  - position_id: r2c13
+    key_name: backslash
+    switch_id: null
+
+  - position_id: r3c0
+    key_name: caps_lock
+    switch_id: null
+  - position_id: r3c1
+    key_name: a
+    switch_id: null
+  - position_id: r3c2
+    key_name: s
+    switch_id: null
+  - position_id: r3c3
+    key_name: d
+    switch_id: null
+  - position_id: r3c4
+    key_name: f
+    switch_id: null
+  - position_id: r3c5
+    key_name: g
+    switch_id: null
+  - position_id: r3c6
+    key_name: h
+    switch_id: null
+  - position_id: r3c7
+    key_name: j
+    switch_id: null
+  - position_id: r3c8
+    key_name: k
+    switch_id: null
+  - position_id: r3c9
+    key_name: l
+    switch_id: null
+  - position_id: r3c10
+    key_name: semicolon
+    switch_id: null
+  - position_id: r3c11
+    key_name: quote
+    switch_id: null
+  - position_id: r3c12
+    key_name: enter
+    switch_id: null
+
+  - position_id: r4c0
+    key_name: left_shift
+    switch_id: null
+  - position_id: r4c1
+    key_name: z
+    switch_id: null
+  - position_id: r4c2
+    key_name: x
+    switch_id: null
+  - position_id: r4c3
+    key_name: c
+    switch_id: null
+  - position_id: r4c4
+    key_name: v
+    switch_id: null
+  - position_id: r4c5
+    key_name: b
+    switch_id: null
+  - position_id: r4c6
+    key_name: n
+    switch_id: null
+  - position_id: r4c7
+    key_name: m
+    switch_id: null
+  - position_id: r4c8
+    key_name: comma
+    switch_id: null
+  - position_id: r4c9
+    key_name: period
+    switch_id: null
+  - position_id: r4c10
+    key_name: slash
+    switch_id: null
+  - position_id: r4c11
+    key_name: right_shift
+    switch_id: null
+
+  - position_id: r5c0
+    key_name: left_ctrl
+    switch_id: null
+  - position_id: r5c1
+    key_name: left_option
+    switch_id: null
+  - position_id: r5c2
+    key_name: left_command
+    switch_id: null
+  - position_id: r5c3
+    key_name: space
+    switch_id: null
+  - position_id: r5c4
+    key_name: right_command
+    switch_id: null
+  - position_id: r5c5
+    key_name: right_option
+    switch_id: null
+  - position_id: r5c6
+    key_name: right_ctrl
+    switch_id: null
+  - position_id: r5c7
+    key_name: left_arrow
+    switch_id: null
+  - position_id: r5c8
+    key_name: down_arrow
+    switch_id: null
+  - position_id: r5c9
+    key_name: right_arrow
+    switch_id: null
